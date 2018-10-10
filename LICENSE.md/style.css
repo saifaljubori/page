@@ -1,0 +1,224 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,700");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: #262626;
+  font-size: 16px;
+}
+
+main {
+    max-width: 1000px;
+    background-color: #ffffff;
+    margin: 6px auto;
+    border-top: 2px solid #000;
+}
+main h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding: 2rem 5% 1rem 5%;
+}
+main h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding: 0 5% 3rem 5%;
+}
+main .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 5% 5% 5%;
+}
+main .flex-container figure {
+  margin-bottom: 1rem;
+  position: relative;
+}
+main .flex-container figure img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: opacity 0.5s;
+}
+main .flex-container figure img:hover {
+  opacity: 0.9;
+}
+main .flex-container figure figcaption {
+  padding: 10px;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  color: #fff;
+  opacity: 0.7;
+}
+main .flex-container figure figcaption .fig-title {
+  font-weight: 700;
+}
+main .flex-container figure figcaption .fig-author {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+main .more-container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 5%;
+  margin-bottom: 5%;
+}
+main .more, main .more:link, main more:visited {
+  color: #262626;
+  font-weight: 700;
+  padding: 10px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: opacity 0.5s;
+}
+main .more:hover {
+  opacity: 1;
+}
+
+/* Media queries*/
+@media screen and (min-width: 701px) {
+  figure {
+    width: calc(33% - 0.5rem);
+  }
+}
+@media screen and (max-width: 700px) {
+  figure {
+    width: calc(50% - 0.5rem);
+  }
+}
+@media screen and (max-width: 550px) {
+  figure {
+    width: 100%;
+  }
+}
+
+
+    #yy7:hover{cursor: pointer}
+    #yy7 {
+      background: transparent; outline: none;
+      
+      border: 2px solid #fff;
+      
+      overflow: hidden;
+      
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);  
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;    
+    border-radius: 5px;
+    text-align: center;
+    }
+
+    /*button:before (attr data-hover)*/
+    #yy7:hover:before{opacity: 1; transform: translate(0,0);}
+    #yy7:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+    }
+      /*button div (button text before hover)*/
+      #yy7:hover div{opacity: 0; transform: translate(100%,0)}
+      #yy7 div{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+      }
+
+
+
+
+
+
+
+
+
+
+
+.body7 {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 89px;
+  width: 100%;
+  z-index: 99999999999;
+}
+
+.sticky + .body7 {
+  padding-top: 60px;
+}
+#s9993 a {
+    position: absolute;
+    left: -153px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    z-index: 99999999999;
+   top:0;
+}
+
+#s9993 a:hover {
+    left: 0;
+}
+
+#s3 {
+    margin-top: 20px;
+    background-color: #6cb475;
+}
+
+#s4 {
+   margin-top: 80px;
+    background-color:  #faca4a;
+}
+
+#s5 {
+    margin-top: 140px;
+    background-color: #8dc5dc;
+}
+
+#s6 {
+    margin-top: 200px;
+    background-color: #f7954a
+}
